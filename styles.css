@@ -67,9 +67,17 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-input::-webkit-autofill:{
-    background-color: rgb(182, 245, 182);
+input:invalid {
+background-color: rgb(241, 145, 145);
 }
+input::placeholder {
+    background-color: lightgray;
+}
+
+#passMatchCheck {
+    grid-column: 2 / 3;
+}
+
 label {
     display: flex;
     flex-direction: column;

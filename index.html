@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -26,13 +26,13 @@
                     Šią Žolynių naktį, eikime ieškoti paparčio žiedo kartu!
                 </header>
             <main>
-                <form action="GET">
+                <form action="GET" id="form">
                     <div class="heading choice">
                         <legend>Registracija</legend>
                     </div>
                     <div class="first-name choice">
                         <label for="first-name">First Name</label>
-                        <input type="name" name="first-name" id="first-name" required>
+                        <input type="name" name="first-name" id="first-name" placeholder="Name" required>
                     </div>
                     <div class="last-name choice">
                         <label for="last-name">Last Name</label>
@@ -52,16 +52,18 @@
                     </div>
                     <div class="passConfirm choice">
                         <label for="passConfirm">Confirm password</label>
-                        <input type="password" name="confirm-pass" id="passConfirm" required>
+                        <input type="password" name="confirm-pass" id="passConfirm" onkeyup='check();' required>
+                        <div id="passMatchCheck"></div>
                     </div>
             </main>
             <footer>
                 <div class="btns">
-                    <button type="submit" class="submit">Submit</button>
+                    <button type="submit" id="submit">Submit</button>
                     <button type="reset">Reset</button>
                 </div>
                 </form>
             </footer>
         </div>
+       
 </body>
 </html>
