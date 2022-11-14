@@ -46,7 +46,7 @@ form {
 }
 .heading, .first-name, .last-name, .email, .phone, .pass, .passConfirm {
    display: grid;
-   text-align: start;
+   
    
 
 }
