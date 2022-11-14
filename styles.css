@@ -47,11 +47,11 @@ form {
     padding: 0px 140px;
 }
 input {
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 5px;
     font-size: large;
     padding-left: 10px;
     transition: 0.3s;
+    border: 1px solid black
 }
 input:hover{
     background-color: lightgray;
@@ -61,17 +61,14 @@ input:focus {
     scale: 1.05;
 }
 input:valid {
-    background-color: rgb(182, 245, 182);
+    background-color: rgb(206, 241, 206);
 }
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-input:invalid {
-background-color: rgb(241, 145, 145);
-}
-input::placeholder {
-    background-color: lightgray;
+input:invalid:focus {
+    background-color: rgb(245, 221, 221);
 }
 
 #passMatchCheck {
@@ -91,9 +88,17 @@ label {
 
 
 
-.btns {
-    display: flex;
-    padding: 10px;
+#submit {
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    margin-left: 140px;
+    margin-top: 60px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#submit:hover {
+    background-color: rgb(211, 209, 209);
 }
 .attribute{
     position: absolute;

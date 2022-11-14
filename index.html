@@ -31,27 +31,27 @@
                         <legend>Registracija</legend>
                     </div>
                     <div class="first-name choice">
-                        <label for="first-name">First Name</label>
-                        <input type="name" name="first-name" id="first-name" placeholder="Name" required>
+                        <label for="first-name">Vardas</label>
+                        <input type="name" name="first-name" id="first-name" required>
                     </div>
                     <div class="last-name choice">
-                        <label for="last-name">Last Name</label>
+                        <label for="last-name">Pavardė</label>
                         <input type="name" name="last-name" id="last-name" required>
                     </div>
                     <div class="email choice">
-                        <label for="email">Email</label>
+                        <label for="email">E. Paštas</label>
                         <input type="email" name="email" id="email" required>
                     </div>
                     <div class="phone choice">
-                        <label for="phone-number">Phone number</label>
-                        <input type="number" name="phone-number" id="phone-number" required>
+                        <label for="phone-number">Telefono numeris</label>
+                        <input type="number" minlength="9" name="phone-number" id="phone-number" required>
                     </div>
                     <div class="pass choice">
-                        <label for="password">Password</label>
+                        <label for="password">Slaptažodis</label>
                         <input type="password" name="password" id="password" required>
                     </div>
                     <div class="passConfirm choice">
-                        <label for="passConfirm">Confirm password</label>
+                        <label for="passConfirm">Patvirtinkite slaptažodį</label>
                         <input type="password" name="confirm-pass" id="passConfirm" onkeyup='check();' required>
                         <div id="passMatchCheck"></div>
                     </div>
@@ -59,7 +59,7 @@
             <footer>
                 <div class="btns">
                     <button type="submit" id="submit">Submit</button>
-                    <button type="reset">Reset</button>
+                    
                 </div>
                 </form>
             </footer>
