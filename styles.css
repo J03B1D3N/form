@@ -28,7 +28,6 @@ header, main, footer {
     width: 100%;
     box-sizing: border-box;
 }
-
 header {
     display: flex;
     justify-content: center;
@@ -43,12 +42,20 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 70px);
-}
-.heading, .first-name, .last-name, .email, .phone, .pass, .passConfirm {
-   display: grid;
-   
-   
 
+}
+.input {
+   display: grid;
+   padding: 0px 140px;
+   
+}
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.heading {
+    grid-column: 1 / -1;
 }
 
 
@@ -63,20 +70,21 @@ form {
     left: 140px;
 
 }
-a {
-    color: white;
-}
-p {
-    margin: 15px;
-}
+
 .poem {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     border: 1px solid black;
-    margin: 20px;
-    
+    margin: 40px 100px;
 }
+
 .poemAtt {
     
+}
+a {
+    color: white;
+}
+p {
+    margin: 15px;
 }
