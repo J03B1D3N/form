@@ -96,13 +96,17 @@ label {
     margin-top: 40px;
     border-radius: 5px;
     margin-bottom: 10px;
-    border: 1px solid black;
+    border: rgb(224, 222, 222);
+    background-color: rgb(6, 112, 40);
+    box-shadow: 0px 5px 5px rgb(71, 71, 71);
+    color: white;
+    font-weight: 900;
 }
 #submit:hover {
-    background-color: rgb(211, 209, 209);
+    background-color: rgb(5, 78, 28);
 }
 #submit:active {
-    background-color: rgb(134, 131, 131);
+    background-color: rgb(3, 41, 15);
 }
 .btns {
     display: flex;
